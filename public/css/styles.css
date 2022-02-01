@@ -3,6 +3,52 @@
     padding: 0px;    
     box-sizing: border-box;
 }
+@media (min-width: 361px){
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    .form-register .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    footer{
+        width: 60%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 15px;
+        flex-direction: row;
+    }
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -10,7 +56,7 @@ body{
 }
 .form{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: stretch;
     align-items: flex-start;
     margin: 0 auto;
@@ -22,7 +68,16 @@ body{
     margin-left: 5px;
 }
 .botons {
-    width: 50%;
+    width: 91%;
+    background: #033ebd;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .botons-login{
+    width: 20%;
     background: #033ebd;
     border: none;
     padding: 12px;
@@ -39,12 +94,14 @@ p{
     font-size: 12px;
 }
 
-div.top-header{
+div.top-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
 }
-
 header div.top-header p{
     width: 100%;
     text-align: center;
@@ -57,7 +114,7 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width: 20%;
 }
 
 header div.logo{
@@ -89,6 +146,8 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    width: 120%;
+    height: 50%;
 }
 
 header .form .submit{
@@ -103,14 +162,15 @@ div.burger-menu{
 }
 
 div.burger-menu i{
-    background-color: #0044AA;
+   /* background-color: #0044AA;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
     height: 40px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 40px;
+    width: 40px;*/
+    display: none;
 }
 
 div.last-visit,
@@ -219,29 +279,10 @@ footer{
     align-items: stretch;
     justify-content: center;
     margin-top: 15px;
+    flex-direction: row;
+}
+.nav{
+    display: flex;
+
 }
 
-@media (min-width: 361px){
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.products article{
-        width: 45%;
-    }
-
-    .price,
-    .discount{
-        width: 50%;
-    }
-}
-
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
-    }
-}
