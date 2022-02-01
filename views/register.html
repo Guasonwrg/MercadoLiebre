@@ -13,9 +13,11 @@
         <div class="logo"> 
             <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
         </div>
-        <div class="form" action="#" method="GET">
-            <div class="input">Buscar productos, marcas y más</div>
-            <div class="submit"><i class="fa fa-search"></i></div>
+        <div class="form">
+          <form action="#" method="GET">
+            <input class="input" type="text" placeholder="Buscar productos, marcas y más">
+            <div class="submit"><button class="fa fa-search"></button></div>
+        </form>
         </div>
         <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
     </div>
@@ -27,8 +29,8 @@
             <li><a href="#">Ayuda</a></li>
         </ul>
         <ul>
-            <li><a href="/register">Creá tu cuenta</a></li>
-            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="register.html">Creá tu cuenta</a></li>
+            <li><a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
             <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
     </nav>
@@ -37,8 +39,11 @@
     </div>
 </header>
   <section class="form-register">
-    <div class="form" action="#" method="GET"></div>
+    <div class="form">
+      
+    </div>
   <div class="form">
+    <ul>
     <h4>Formulario de Registro</h4>
     <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
     <input class="controls" type="text" name="apellido" id="apellido" placeholder="Nombre de Usuario">
@@ -46,6 +51,10 @@
     <h5>Fecha de nacimiento</h5>
     <input class="controls" type="date" name="fecha" id="fecha" placeholder="dd/mm/yyyy">
     <input class="controls" type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio">
+    <label>Avatar</label>
+    <input type="file">
+    </ul>
+    <ul>
     <h5>Perfil de Usuario</h5>
     <input class="controls" type="radio" name="radio" id="radio1" value="comprador"> comprador
     <input class="controls" type="radio" name="radio" id="radio2" value="vendedor"> vendedor
@@ -59,6 +68,7 @@
     <input class="controls" type="password" name="password" id="password" placeholder="Confirme su Contraseña">
     <input type="checkbox" id="cbox6" value="first_checkbox"> Estoy de acuerdo con <a href="#">Terminos y Condiciones</a>
     <input class="botons" type="submit" value="Registrarse">
+  </ul>
   </div>
   </section>
 </body>
